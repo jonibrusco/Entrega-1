@@ -1,0 +1,100 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+h1{
+    font-size: 5rem;
+    color: white;
+    font-family:'Kode Mono','Times New Roman', Times, serif;
+}
+
+h1 span{
+
+}
+
+/*
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 2.5rem;
+    rgba(0, 0, 0, 0.877);
+}
+
+*/
+
+.header{
+    display: flex;
+    padding-top: 1.5rem;
+    background: linear-gradient(-45deg,rgba(68, 7, 87, 0.815), rgba(0, 0, 0, 0.877));
+}
+.imagen-header{
+    background-image: url(../img/logo-removebg-preview.png);
+    background-position: center;
+    flex-basis: 30%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.cabecera-navegacion{
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.nav-principal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-principal a{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Kode Mono';
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    border: solid 1px white;
+}
+
+.nav-principal a:hover{
+    background-color: rgba(163, 163, 0, 0.699);
+}
+
+.flex-inicial{
+    display: flex;
+    height: 35rem;
+}
+
+.flex-inicial img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.flex-inicial img:hover{
+    transition: 2s;
+    width: 100%;
+}
+
