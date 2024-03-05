@@ -74,6 +74,7 @@ h3{
 .nav-principal{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .nav-principal a{
@@ -85,11 +86,14 @@ h3{
     width: 100%;
     text-align: center;
     border: solid 1px white;
+    
 }
 
-.nav-principal a:hover{
+.nav-principal a:hover,
+.nav-principal a:focus{
     background-color: rgba(238, 238, 13, 0.699);
 }
+
 /*
 .flex-inicial{
     display: flex;
@@ -110,6 +114,7 @@ h3{
 */
 
 
+
 .quienes-somos{
     display: flex;
     justify-content: space-around;
@@ -118,6 +123,11 @@ h3{
     background-repeat:no-repeat;
     background-size: cover;
     padding-bottom: 3.5rem;
+    transition: 5s;
+}
+
+.quienes-somos:hover{
+    background-position: center;
 }
 
 .quienes-somos img{
@@ -127,7 +137,7 @@ h3{
 
 .quienes-somos:hover img{
     width: 40%;
-    transition: .8s;
+    transition: 2s;
 }
 
 
@@ -143,14 +153,15 @@ h3{
 .flex-quienes img{
     margin: auto;
     width: 0;
-    
 }
 
 
 .quienes-somos h2{
     font-size: 5rem;
     color: rgba(0, 47, 255, 0.747);
+    text-shadow: 0 0 10px rgba(0, 162, 255, 0.637);
 }
+
 .fondo-letras{
     background: linear-gradient(45deg, rgba(0, 47, 255, 0.747), rgba(0, 0, 0, 0.603));
     background-position: cover;
@@ -188,10 +199,12 @@ h3{
     50%{transform: scale(1.1);}
 }
 
+/*
 .grid-quienes{
     display: grid;
     grid-template-columns: repeat(3, 2fr);
 }
+
 
 .categorias-quienes{
     box-shadow: 1px 1px 10px 2px rgba(25, 25, 172, 0.61);
@@ -204,15 +217,31 @@ h3{
     font-size: 1.2rem;
     text-align: center;
 }
-
+*/
 
 .seccion-historia{
+    background-image: url(../img/fondo-historia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 40px;
+    border-block: solid 5px;
+    margin-top: 20px;
+}
+
+.seccion-historia h2{
+    font-size: 100px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(5px);
+    margin-top: 10px;
+}
+
+.historia{
     display: flex;
     justify-content: space-around;
 }
 
 .articulo-historia{
-    background-color: transparent;
     width: 500px;
     height: 500px;
     margin: 20px;
@@ -241,18 +270,13 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 1.2s;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-}
-
-.imagen-art-hist1, .imagen-art-hist2,
-.imagen-art-hist3 {
+    border-radius: 100px;
     background-position: center;
     background-size: cover;
-    transform: rotateY(0deg);
-    border-radius: 100px;
 }
+
 
 .imagen-art-hist1{
     background-image: url(../img/primeros\ pasos.webp);
@@ -262,28 +286,32 @@ h3{
     background-image: url(../img/digitalizacion\ y\ seguridad.webp);
 }
 
-.imagen-art-hist2 h3{
-    font-size: 3.5rem;
-    text-align: center;
-    color: white;
+.imagen-art-hist3{
+    background-image: url(../img/industria-4.0.jpg);
 }
 
-.imagen-art-hist3{
-    background-image: url(../img/industria-4.0-900x480.webp);
-    width: 100%;
+.titulo-hist h3{
+    display: grid;
+    text-align: center;
+    place-items: center;
+    font-size: 3.5rem;
+    backdrop-filter: blur(10px);
+    color: white;
+    width: 500px;
+    height: 140px;
+    text-shadow: 0 0 10px white;
 }
 
 .explicacion-hist{
     position: absolute;
-    top:0;
-    background: linear-gradient(45deg,rgba(128, 0, 167, 0.733),rgba(68, 7, 87, 0.336));
+    background: linear-gradient(45deg,rgba(128, 0, 167, 0.932),rgba(68, 7, 87, 0.726));
     transform: rotateY(180deg);
     width: 100%;
     height: 100%;
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding-inline: 50px;
     text-align: center;
     border-radius: 100px;
 }
@@ -293,9 +321,56 @@ h3{
 }
 
 .explicacion-hist p{
-    font-size: 18px;
+    font-size: 22px;
 }
 
 /* dento de img {onmnouseover="this.src='....'" y onmouseout} */
 
+.fabrica-futuro{
+    background-image: url(../img/fondo-lafabrica-delfuturo.avif);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    transition: 5s;
+    grid-template-rows: repeat(4, 1fr);
+}
 
+.fabrica-futuro:hover{
+    background-position-y: 0px;
+    transform: scale(1.08);
+}
+
+.fabrica-futuro h2{
+    color: white;
+    text-shadow: 0 0 40px;
+}
+
+.fabrica-futuro p{
+    font-size: 40px;
+    color: white;
+    padding-inline: 100px;
+    padding-block: 30px;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.fabrica-futuro span{
+    color: red;
+    text-shadow: 0 0 20px;
+}
+
+.fabrica-futuro a{
+    backdrop-filter: blur(100px);
+    padding: 10px 30px;
+    color: white;
+    font-size: 50px;
+    border-radius: 50px;
+    transition: 2s;
+    margin-top: 50px;
+    background-color: rgba(238, 238, 13, 0.699);
+    box-shadow: 0 0 30px;
+}
