@@ -31,6 +31,15 @@ h1 span{
 
 }
 
+h2{
+    text-align: center;
+    font-size: 4rem;
+}
+
+h2 span{
+    color: rgba(128, 0, 167, 0.733);
+}
+
 /*
 h2{
     font-size: 3.5rem;
@@ -46,7 +55,7 @@ h3{
 .header{
     display: flex;
     padding-top: 1.5rem;
-    background: linear-gradient(-45deg,rgba(68, 7, 87, 0.815), rgba(0, 0, 0, 0.877));
+    background: linear-gradient(45deg,rgba(68, 7, 87, 0.733),rgba(255, 255, 255, 0.877));
 }
 .imagen-header{
     background-image: url(../img/logo-removebg-preview.png);
@@ -79,9 +88,9 @@ h3{
 }
 
 .nav-principal a:hover{
-    background-color: rgba(163, 163, 0, 0.699);
+    background-color: rgba(238, 238, 13, 0.699);
 }
-
+/*
 .flex-inicial{
     display: flex;
     height: 35rem;
@@ -97,4 +106,196 @@ h3{
     transition: 2s;
     width: 100%;
 }
+
+*/
+
+
+.quienes-somos{
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 4rem;
+    background-image: url(../img/fondo-quienes.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding-bottom: 3.5rem;
+}
+
+.quienes-somos img{
+    margin: auto;
+    width: 0;
+}
+
+.quienes-somos:hover img{
+    width: 40%;
+    transition: .8s;
+}
+
+
+.flex-quienes{
+    padding-bottom: 40px;
+    margin-top: 10px;
+    margin: auto;
+    flex-basis: 50%;
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+
+.flex-quienes img{
+    margin: auto;
+    width: 0;
+    
+}
+
+
+.quienes-somos h2{
+    font-size: 5rem;
+    color: rgba(0, 47, 255, 0.747);
+}
+.fondo-letras{
+    background: linear-gradient(45deg, rgba(0, 47, 255, 0.747), rgba(0, 0, 0, 0.603));
+    background-position: cover;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animacion-flip 2s ease;
+}
+
+@keyframes animacion-flip{
+
+}
+
+.flex-quienes p{
+    font-size: 2rem;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 5rem;
+}
+.enlace-flex-inicial{
+    animation: pulse 2s infinite;
+}
+
+.enlace-flex-inicial a{
+    font-size: 3rem;
+    box-shadow: 1px 2px 10px  rgba(255, 217, 0, 0.747);
+    padding-block: 20px;
+    padding-inline: 40px;
+    border-radius: 10px;
+}
+
+@keyframes pulse{
+    0%, 100%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+}
+
+.grid-quienes{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.categorias-quienes{
+    box-shadow: 1px 1px 10px 2px rgba(25, 25, 172, 0.61);
+    border-radius: 1rem;
+    margin: 25px;
+}
+
+.categorias-quienes h3{
+    color: rgba(0, 0, 255, 0.589);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.seccion-historia{
+    display: flex;
+    justify-content: space-around;
+}
+
+.articulo-historia{
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+}
+
+.carta{
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    transform: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.articulo-historia:hover .carta{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+
+.imagen-art-hist1, .imagen-art-hist2,
+.imagen-art-hist3, .explicacion-hist{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1.2s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.imagen-art-hist1, .imagen-art-hist2,
+.imagen-art-hist3 {
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(0deg);
+    border-radius: 100px;
+}
+
+.imagen-art-hist1{
+    background-image: url(../img/primeros\ pasos.webp);
+}
+
+.imagen-art-hist2 {
+    background-image: url(../img/digitalizacion\ y\ seguridad.webp);
+}
+
+.imagen-art-hist2 h3{
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+}
+
+.imagen-art-hist3{
+    background-image: url(../img/industria-4.0-900x480.webp);
+    width: 100%;
+}
+
+.explicacion-hist{
+    position: absolute;
+    top:0;
+    background: linear-gradient(45deg,rgba(128, 0, 167, 0.733),rgba(68, 7, 87, 0.336));
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.explicacion-hist h3{
+    font-size: 3rem;
+}
+
+.explicacion-hist p{
+    font-size: 18px;
+}
+
+/* dento de img {onmnouseover="this.src='....'" y onmouseout} */
+
 
