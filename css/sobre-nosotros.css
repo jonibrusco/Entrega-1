@@ -1,0 +1,46 @@
+
+.titulo-seccion{
+    border-block: solid 2px rgba(128, 0, 167, 0.466);
+    padding-block: 10px;
+}
+
+.sobre-nosotros{
+    display: flex;
+    margin-top: 10px;
+    height: 600px;
+    opacity: 0.8;
+}
+
+.sobre-nosotros:hover{
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.imagen-sobre-nosotros{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    object-fit: cover;
+    flex-basis:50%;
+}
+
+.imagen-comprometidos{
+    background-image: url(../img/sobre_nosotros.webp);
+}
+
+.texto-sobre-nosotros{
+    background-color:rgba(128, 0, 167, 0.466);
+    color: white;
+    flex-basis: 50%;
+    transition: 2s;
+}
+
+.texto-sobre-nosotros p{
+    padding: 40px;
+    font-size: 25px;
+}
+
+.imagen-afianzando-vinculos{
+    background-image: url(../img/afianzando-vinculos.webp);
+}
+
