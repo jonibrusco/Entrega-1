@@ -159,7 +159,7 @@ h3{
     width: 0;
 }
 
-
+/*
 .quienes-somos h2{
     font-size: 5rem;
     color: rgba(0, 47, 255, 0.747);
@@ -174,7 +174,7 @@ h3{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animacion-flip 2s ease;
-}
+}*/
 
 @keyframes animacion-flip{
 
