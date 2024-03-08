@@ -1,4 +1,304 @@
+.titulo-articulo{
+    border-block: solid 2px rgba(128, 0, 167, 0.466);
+    padding-block: 10px;
+}
+
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.producto{
+    margin: 20px;
+    display: grid;
+    border-radius: 40px;
+    opacity: .8;
+    transition: .5s;
+    background-color: rgba(128, 0, 167, 0.466);
+}
+
+.imagen-producto{
+    display: flex;
+    overflow: hidden;
+    flex:1;
+    
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.imagen-producto img{
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+    transition: 1s;
+}
+
+
+.producto h4{
+    text-align: center;
+    font-size: 28px;
+    color: white;
+}
+
+.producto:hover{
+    opacity: 1;
+    filter: contrast(120%);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px;
+
+}
+
+.producto:hover h4{
+    text-decoration: underline white;
+}
+
+.producto:hover img{
+    transform: scale(1.2) rotate(8deg);
+}
+
+.servicios{
+    display:grid;
+    row-gap: 30px;
+}
+
+.servicio{
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.85;
+}
+
+.servicio:hover{
+    transition: .5s;
+    opacity: 1;
+    filter: contrast(120%);
+    transform: scale(1.1);
+}
 
 
 
+.imagen-servicio-impar{
+    height: 100px;
+    flex-basis: 50%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;  
+}
+
+.imagen-servicio-par{
+    height: 100px;
+    flex-basis: 50%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;  
+}
+
+.letra-servicio-impar{
+    background-color: rgba(128, 0, 167, 0.466);
+    color: white;
+    height: 100%;
+    flex-basis: 50%;
+    font-size: 30px;
+    margin: auto;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.letra-servicio-par{
+    background-color: rgba(128, 0, 167, 0.466);
+    color: white;
+    height: 100%;
+    flex-basis: 50%;
+    font-size: 30px;
+    margin: auto;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.servicio:hover .servicio1,
+.servicio:hover .servicio3,
+.servicio:hover .servicio5{
+    transition: 1s;
+    border-top-left-radius: 550px;
+    border-bottom-left-radius: 150px;
+}
+
+.servicio:hover .servicio2,
+.servicio:hover .servicio4{
+    transition: 1s;
+    border-top-right-radius: 550px;
+    border-bottom-right-radius: 150px;
+}
+
+.servicio:hover .letra-servicio-impar{
+    transition: 1s;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 550px;
+}
+
+.servicio:hover .letra-servicio-par{
+    transition: 1s;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 550px;
+}
+
+.servicio h4{
+    padding: 15px;
+    text-align: center;
+}
+
+.servicio:focus .servicio2{
+    transform: scale(1.45);
+}
+
+.servicio1{
+    background-image: url(../img/servicio-analisis\ de\ datos.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.servicio2{
+    background-image: url(../img/servicio-celula\ robotizada.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.servicio3{
+    background-image: url(../img/servicio-redes\ industriales.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.servicio4{
+    background-image: url(../img/servicio-big\ data.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.servicio5{
+    background-image: url(../img/servicio-ciberseguridad.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.formulario{
+    width: 800px;
+    padding: 30px;
+    margin: auto;
+    background-color: rgba(128, 0, 167, 0.356);
+    border-radius: 30px;
+}
+
+
+.formulario h4{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    margin: 0 0 25px;
+    text-decoration: underline;
+}
+
+.formulario h3{
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.div-catalogo{
+    position: relative;
+}
+
+.inputs-catalogo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    background-color: rgba(128, 0, 167, 0.356);
+    padding: 10px;
+    margin-bottom: 35px;
+    border-radius: 20px;
+    border: solid 3px white;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    background: none;
+}
+
+.etiqueta-catalogo{
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top:10px;
+    font-size: 25px;
+}
+
+.formulario p{
+    height: 60px;
+    font-size: 20px;
+    color: white;
+}
+
+.parte-abajo-catalogo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.parte-abajo-catalogo p{
+    font-size: 25px;
+    height: auto;
+}
+
+.optiongroup-catalogo{
+    color: white;
+}
+
+.textarea-catalogo{
+    margin-bottom: 25px;
+}
+
+.textarea-catalogo p{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.areadetexto{
+    font-size: 20px;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.formulario a{
+    color:white;
+}
+
+.formulario a:hover{
+    text-decoration: underline;
+}
+
+.boton-catalogo{
+    width: 100%;
+    font-size: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(177, 224, 81);
+    color: white;
+    padding: 10px;
+}
+
+.boton-catalogo:hover{
+    background-color: rgba(197, 252, 87, 0.911);
+}
+
+.inputs-catalogo:focus + .etiqueta-catalogo,
+.inputs-catalogo:not(:placeholder-shown) + .etiqueta-catalogo{
+    transition: 0.7s;
+    transform: translateY(-35px) scale(.7);
+    transform-origin: left top;
+}
+
+.formulario-catalogo img{
+    margin: 30px auto;
+    height: 300px;
+}
 

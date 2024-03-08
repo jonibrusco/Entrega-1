@@ -4,6 +4,51 @@
     padding-block: 10px;
 }
 
+.nosotros .carta{
+    margin: auto;
+    height: 600px;
+}
+
+.foto-frontal, .cara-trasera{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cara-trasera{
+    opacity: 0;
+    text-align: center;
+}
+
+.foto-frontal img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nosotros:hover .foto-frontal{
+    translate: -250px;
+    transition: 2s;
+}
+
+.nosotros:hover .cara-trasera{
+    translate: 250px;
+    transition: 2s;
+    opacity: 1;
+}
+
+.cara-trasera h3{
+    font-size: 45px;
+}
+
+.cara-trasera h5{
+    font-size: 30px;
+}
+
+.cara-trasera h5 span{
+color: rgba(128, 0, 167, 0.733);
+}
+
 
 .grid-el-cliente{
     display: grid;
@@ -16,7 +61,7 @@
 
 .sobre-nosotros{
     display: flex;
-    margin-top: 10px;
+    margin-bottom: 10px;
     height: 600px;
     opacity: 0.8;
 }
@@ -46,6 +91,12 @@
     transition: 2s;
 }
 
+.texto-sobre-nosotros h2{
+    margin-bottom:0;
+    margin-top: 20px;
+    padding-inline: 20px;
+}
+
 .texto-sobre-nosotros p{
     padding: 40px;
     font-size: 25px;
@@ -55,3 +106,54 @@
     background-image: url(../img/afianzando-vinculos.webp);
 }
 
+aside{
+    border: solid rgba(128, 0, 167, 0.466);
+}
+
+.aside h3{
+    background-color: rgba(128, 0, 167, 0.466);
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 50px;
+    padding: 5px;
+}
+
+.casos-de-exito{
+    padding: 5px;
+    height: 1150px;
+    overflow: scroll;
+}
+
+.caso{
+    opacity: .8;
+}
+
+.caso:hover{
+    opacity: 1;
+}
+
+.caso:hover h5{
+    text-decoration: underline;
+}
+
+.caso img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.caso h5{
+    background-color: rgba(128, 0, 167, 0.466);
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-block: 10px;
+    padding-inline: 7px;
+    font-size: 25px;
+    color: white;
+}
+
+
+.final-nosotros{
+    
+}
