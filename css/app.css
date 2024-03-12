@@ -61,15 +61,12 @@ p span{
     color: rgba(128, 0, 167, 0.733);
 }
 
+
 .header{
     display: flex;
     padding-top: 1.5rem;
     background: linear-gradient(45deg,rgba(68, 7, 87, 0.733),rgba(255, 255, 255, 0.877));
 }
-
-
-
-
 
 .imagen-header{
     background-image: url(../img/logo-removebg-preview.png);
@@ -78,7 +75,6 @@ p span{
     object-fit: cover;
     background-repeat: no-repeat;
 }
-
 
 
 .cabecera-navegacion{
@@ -296,7 +292,6 @@ p span{
     }
 }
 
-
 .explicacion-hist{
     position: absolute;
     background: rgba(128, 0, 167, 0.466);
@@ -319,10 +314,6 @@ p span{
     font-size: 22px;
 }
 
-/* dento de img {onmnouseover="this.src='....'" y onmouseout} */
-
-
-
 .innovacion{
     display: flex;
     height: 700px;
@@ -342,10 +333,6 @@ p span{
     height: 500px;
     width: 700px;
     transition: 2s;
-    /*
-    display: grid;
-    justify-content: center;^
-    */
     animation: pulse 3s infinite;
 }
 
@@ -447,7 +434,6 @@ p span{
 }
 
 
-
 .fabrica-futuro{
     background-image: url(../img/fondo-lafabrica-delfuturo.avif);
     height: 850px;
@@ -468,7 +454,7 @@ p span{
 .fabrica-futuro h2{
     color: white;
     text-shadow: 0 0 40px;
-    border-block: none;
+    border-block: none; 
 }
 
 .fabrica-futuro p{

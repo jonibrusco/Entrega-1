@@ -339,9 +339,7 @@
         flex-direction: column;
         width: auto;
     }
-    
 }
-
 
 .servicio1{
     background-image: url(../img/servicio-analisis\ de\ datos.webp);
@@ -373,8 +371,6 @@
     background-size: cover;
 }
 
-
-
 .formulario{
     width: 800px;
     padding: 30px;
@@ -398,8 +394,6 @@
     font-size: 30px;
     text-align: center;
 }
-
-
 
 .div-catalogo{
     position: relative;
