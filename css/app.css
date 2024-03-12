@@ -27,36 +27,50 @@ h1{
     font-family:'Kode Mono','Times New Roman', Times, serif;
 }
 
-h1 span{
+@media (max-width: 1000px){
+    h1{
+        font-size: 3rem;
+    }
+}
 
+@media (max-width: 767px){
+    h1{
+        font-size: 2rem;
+    }
 }
 
 h2{
     text-align: center;
     font-size: 4rem;
+    border-block: solid 2px rgba(128, 0, 167, 0.466);
+    padding: 10px;
+
+}
+
+@media (max-width: 767px){
+    h2{
+        font-size: 2.5rem;
+    }
 }
 
 h2 span{
     color: rgba(128, 0, 167, 0.733);
 }
 
-/*
-h2{
-    font-size: 3.5rem;
+p span{
+    color: rgba(128, 0, 167, 0.733);
 }
-
-h3{
-    font-size: 2.5rem;
-    rgba(0, 0, 0, 0.877);
-}
-
-*/
 
 .header{
     display: flex;
     padding-top: 1.5rem;
     background: linear-gradient(45deg,rgba(68, 7, 87, 0.733),rgba(255, 255, 255, 0.877));
 }
+
+
+
+
+
 .imagen-header{
     background-image: url(../img/logo-removebg-preview.png);
     background-position: center;
@@ -64,6 +78,8 @@ h3{
     object-fit: cover;
     background-repeat: no-repeat;
 }
+
+
 
 .cabecera-navegacion{
     border-top: solid 1px white;
@@ -75,6 +91,12 @@ h3{
     display: flex;
     justify-content: space-between;
     
+}
+
+@media (max-width: 767px) {
+    .nav-principal{
+        flex-wrap: wrap;
+    }
 }
 
 .nav-principal a{
@@ -99,27 +121,6 @@ h3{
     background-color: rgba(238, 238, 13, 0.699);
 }
 
-/*
-.flex-inicial{
-    display: flex;
-    height: 35rem;
-}
-
-.flex-inicial img{
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-}
-
-.flex-inicial img:hover{
-    transition: 2s;
-    width: 100%;
-}
-
-*/
-
-
-
 .quienes-somos{
     display: flex;
     justify-content: space-around;
@@ -127,7 +128,6 @@ h3{
     background-image: url(../img/fondo-quienes.jpg);
     background-repeat:no-repeat;
     background-size: cover;
-    padding-bottom: 3.5rem;
     transition: 5s;
 }
 
@@ -135,72 +135,64 @@ h3{
     background-position: center;
 }
 
-.quienes-somos img{
-    margin: auto;
-    width: 0;
-}
-
-.quienes-somos:hover img{
-    width: 40%;
+.fondo2{
+    position: absolute;
+    height: 400px;
+    padding: 20px;
     transition: 2s;
+    object-fit: cover;
 }
 
+.quienes-somos:hover .fondo2{
+    filter: blur(50px);
+    transition: 3s;
+}
 
-.flex-quienes{
-    padding-bottom: 40px;
-    margin-top: 10px;
-    margin: auto;
-    flex-basis: 50%;
-    backdrop-filter: blur(5px);
+.quienes-somos:hover .frontal-quienes{
+    opacity: 1;
+    transition: 3s;
+}
+
+.frontal-quienes{
+    transition: 2s;
     border-radius: 50px;
-}
-
-.flex-quienes img{
-    margin: auto;
-    width: 0;
-}
-
-/*
-.quienes-somos h2{
-    font-size: 5rem;
-    color: rgba(0, 47, 255, 0.747);
-    text-shadow: 0 0 10px rgba(0, 162, 255, 0.637);
-}
-
-.fondo-letras{
-    background: linear-gradient(45deg, rgba(0, 47, 255, 0.747), rgba(0, 0, 0, 0.603));
-    background-position: cover;
-    background-size: 150%;
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animacion-flip 2s ease;
-}*/
-
-@keyframes animacion-flip{
-
-}
-
-
-.flex-quienes p{
-    font-size: 2rem;
+    justify-content: center;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 5rem;
+    padding-bottom: 40px;
+    width: 1000px;
+    z-index: 1;
+    opacity: 0;
 }
-.enlace-flex-inicial{
-    animation: pulse 2s infinite;
+
+.frontal-quienes h2{
+    border: none;
+}
+
+
+.frontal-quienes p{
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .enlace-flex-inicial a{
     max-width: 400px;
     font-size: 2.5rem;
-    box-shadow: 0 0 20px  rgba(255, 217, 0, 0.747);
+    box-shadow: 0 0 20px  rgba(238, 238, 13, 0.699);
     padding-block: 10px;
     padding-inline: 20px;
     border-radius: 60px;
-    background-color: rgba(255, 217, 0, 0.747);
+    background-color: rgba(238, 238, 13, 0.699);
     color: white;
+}
+
+.enlace-flex-inicial a:hover{
+    text-decoration: underline;
+    background-color: rgb(238, 238, 13);
+    box-shadow: 0 0 20px  rgba(238, 238, 13, 0.904);
+}
+
+.enlace-flex-inicial{
+    animation: pulse 2s infinite;
 }
 
 @keyframes pulse{
@@ -208,53 +200,24 @@ h3{
     50%{transform: scale(1.1);}
 }
 
-/*
-.grid-quienes{
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-}
-
-
-.categorias-quienes{
-    box-shadow: 1px 1px 10px 2px rgba(25, 25, 172, 0.61);
-    border-radius: 1rem;
-    margin: 25px;
-}
-
-.categorias-quienes h3{
-    color: rgba(0, 0, 255, 0.589);
-    font-size: 1.2rem;
-    text-align: center;
-}
-*/
 
 .seccion-historia{
-    background-image: url(../img/fondo-historia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     padding-bottom: 40px;
-    border-block: solid 5px;
     margin-top: 20px;
-}
-
-.seccion-historia h2{
-    font-size: 100px;
-    margin-bottom: 10px;
-    backdrop-filter: blur(5px);
-    margin-top: 10px;
 }
 
 .historia{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .articulo-historia{
-    width: 500px;
-    height: 500px;
+    padding-top: 20px;
     margin: 20px;
 }
+
+
 
 .carta{
     background-color: transparent;
@@ -263,7 +226,9 @@ h3{
     position: relative;
     transform: 0.6s;
     transform-style: preserve-3d;
+    transition: 1s;
 }
+
 
 .articulo-historia:hover .carta{
     transform: rotateY(180deg);
@@ -310,6 +275,27 @@ h3{
     height: 140px;
     text-shadow: 0 0 10px white;
 }
+@media (max-width: 767px){
+    
+    .carta{
+        width: 300px;
+        height: 750px;
+    }
+
+    .articulo-historia:hover .carta{
+        transform: none;
+    }
+
+    .articulo-historia:active .carta{
+        transform: rotateY(180deg);
+    }
+
+    .titulo-hist h3{
+        font-size: 2.7rem;
+        width: 300px;
+    }
+}
+
 
 .explicacion-hist{
     position: absolute;
@@ -335,6 +321,77 @@ h3{
 
 /* dento de img {onmnouseover="this.src='....'" y onmouseout} */
 
+
+
+.innovacion{
+    display: flex;
+    height: 700px;
+    flex-wrap: wrap;
+    position: relative;
+    width: 1000px;
+    justify-content: center;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 40px;
+    
+}
+
+.imagen-innovacion{
+    position: absolute;
+    object-fit: cover;
+    height: 500px;
+    width: 700px;
+    transition: 2s;
+    display: grid;
+    justify-content: center;
+    animation: pulse 3s infinite;
+}
+
+.innovacion:hover{
+    background-color: rgba(128, 0, 167, 0.329);
+    transition: 2s;
+}
+
+.innovacion:hover .imagen-innovacion{
+    translate: 250px;
+    transition: 2s;
+    width: 500px;
+    height: 100%;
+    animation: none;
+}
+
+.innovacion:hover p{
+    opacity: 1;
+    transition: 2s;
+}
+
+.texto-innovacion p{
+    font-size: 30px;
+    margin-right: 500px;
+    margin-top: 0;
+    color: white;
+}
+
+.texto-innovacion h3{
+    font-size: 40px;
+    text-align: center;
+}
+
+.texto-innovacion h3 span{
+    color: rgba(128, 0, 167, 0.733);
+}
+
+.innovacion:hover h3{
+    color: white;
+    transition: 1s;
+}
+
+.innovacion:hover h3 span{
+    color: white;
+    transition: 1s;
+    text-decoration: underline;
+}
+
 .fabrica-futuro{
     background-image: url(../img/fondo-lafabrica-delfuturo.avif);
     height: 700px;
@@ -345,17 +402,17 @@ h3{
     place-items: center;
     transition: 5s;
     grid-template-rows: repeat(4, 1fr);
-    
+    margin-bottom: 20px;
 }
 
 .fabrica-futuro:hover{
     background-position-y: 0px;
-    transform: scale(1.08);
 }
 
 .fabrica-futuro h2{
     color: white;
     text-shadow: 0 0 40px;
+    border-block: none;
 }
 
 .fabrica-futuro p{
@@ -401,6 +458,22 @@ h3{
 .footer-arriba{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 767px){
+    .footer-arriba{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.footer h4{
+    font-size: 40px;
+    color: gray;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .nav-footer a{

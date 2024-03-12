@@ -1,8 +1,60 @@
-.titulo-articulo{
-    border-block: solid 2px rgba(128, 0, 167, 0.466);
-    padding-block: 10px;
+
+
+.inicio-productos-servicios{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    padding-top: 30px;
+    transition: 3s;
 }
 
+.inicio-productos-servicios h2{
+    border-block: none;
+}
+
+.inicio-productos-servicios img{
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    transition: 3s;
+}
+
+.letras-inicio-productos{
+    position: absolute;
+    width: 500px;
+    opacity: 0;
+    transition: 2s;
+}
+
+.inicio-productos-servicios:hover{
+    height: 600px;
+}
+
+.inicio-productos-servicios:hover .imagen-derecha{
+    translate: 500px;
+    transition: 3s;
+}
+
+.inicio-productos-servicios:hover .imagen-izquierda{
+    translate: -500px;
+    transition: 3s;
+}
+
+.inicio-productos-servicios:hover .letras-inicio-productos{
+    opacity: 1;
+    transition: 3.5s ease-in;
+}
+
+.letras-inicio-productos a{
+    color: rgba(128, 0, 167, 0.733);
+}
+
+.letras-inicio-productos a:hover{
+    text-decoration: underline;
+}
 
 .productos{
     display: grid;
@@ -66,29 +118,33 @@
     display: flex;
     flex-wrap: wrap;
     opacity: 0.85;
+    height: 100px;
+    transition: 2s;
 }
 
 .servicio:hover{
-    transition: .5s;
+    transition: 3s;
     opacity: 1;
     filter: contrast(120%);
     transform: scale(1.1);
+    height: 300px;
 }
-
 
 
 .imagen-servicio-impar{
-    height: 100px;
+    height: 100%;
     flex-basis: 50%;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;  
+    transition: 2s;
 }
 
 .imagen-servicio-par{
-    height: 100px;
+    height: 100%;
     flex-basis: 50%;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;  
+    transition: 2s;
 }
 
 .letra-servicio-impar{
@@ -100,7 +156,9 @@
     margin: auto;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    transition: 2s;
 }
+
 
 .letra-servicio-par{
     background-color: rgba(128, 0, 167, 0.466);
@@ -111,6 +169,7 @@
     margin: auto;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    transition: 2s;
 }
 
 .servicio:hover .servicio1,
@@ -141,12 +200,33 @@
 }
 
 .servicio h4{
-    padding: 15px;
     text-align: center;
+    margin-block: 15px;
 }
 
-.servicio:focus .servicio2{
-    transform: scale(1.45);
+.servicio p{
+    padding-block: 15px;
+    font-size: 30px;
+}
+
+.letra-servicio-impar p{
+    padding-inline: 30px;
+    opacity: 0;
+}
+.servicio:hover .letra-servicio-impar p{
+    opacity: 1;
+    transition: 3s;
+}
+
+.letra-servicio-par p{
+    padding-left: 80px;
+    padding-right: 10px;
+    opacity: 0;
+}
+
+.servicio:hover .letra-servicio-par p{
+    opacity: 1;
+    transition: 3s;
 }
 
 .servicio1{
