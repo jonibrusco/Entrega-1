@@ -333,8 +333,8 @@ p span{
     padding: 40px;
     margin-bottom: 30px;
     border-radius: 40px;
-    
 }
+
 
 .imagen-innovacion{
     position: absolute;
@@ -342,8 +342,10 @@ p span{
     height: 500px;
     width: 700px;
     transition: 2s;
+    /*
     display: grid;
-    justify-content: center;
+    justify-content: center;^
+    */
     animation: pulse 3s infinite;
 }
 
@@ -372,6 +374,7 @@ p span{
     color: white;
 }
 
+
 .texto-innovacion h3{
     font-size: 40px;
     text-align: center;
@@ -379,6 +382,57 @@ p span{
 
 .texto-innovacion h3 span{
     color: rgba(128, 0, 167, 0.733);
+}
+
+@media (max-width: 900px){
+    .innovacion{
+        width: 650px;
+        background-color: rgba(128, 0, 167, 0.329);
+        height: 900px;
+    }
+    .imagen-innovacion{
+        animation: none;
+        width: 500px;
+    }
+
+    .texto-innovacion p{
+        margin-inline: 40px;
+        margin-top: 300px;
+    }
+
+    .innovacion:hover .imagen-innovacion{
+        translate: 0;
+    }
+    .texto-innovacion h3,
+    .texto-innovacion h3 span{
+        color: white;
+    }
+    .texto-innovacion h3 span{
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 767px){
+    .innovacion{
+        width: 300px;
+    }
+    .imagen-innovacion{
+        width: 300px;
+    }
+    .innovacion:hover .imagen-innovacion{
+        width: 300px;
+    }
+
+    .texto-innovacion p{
+        font-size: 20px;
+        margin-inline: 10px;
+        margin-top: 200px;
+    }
+
+    .texto-innovacion h3{
+        font-size: 27px;
+        margin-top: 30px;
+    }
 }
 
 .innovacion:hover h3{
@@ -392,9 +446,11 @@ p span{
     text-decoration: underline;
 }
 
+
+
 .fabrica-futuro{
     background-image: url(../img/fondo-lafabrica-delfuturo.avif);
-    height: 700px;
+    height: 850px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -441,7 +497,27 @@ p span{
     box-shadow: 0 0 30px;
 }
 
+@media (max-width: 900px){
+    .fabrica-futuro p{
+        font-size: 30px;
+        padding-inline: 15px;
+    }
 
+    .fabrica-futuro a{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 767px){
+    .fabrica-futuro p{
+        font-size: 25px;
+    }
+    .fabrica-futuro a{
+        font-size: 25px;
+        text-align: center;
+        margin-inline: 15px;
+    }
+}
 
 
 
