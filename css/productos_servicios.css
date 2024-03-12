@@ -46,6 +46,7 @@
 .inicio-productos-servicios:hover .letras-inicio-productos{
     opacity: 1;
     transition: 3.5s ease-in;
+    padding-top: 15px;
 }
 
 .letras-inicio-productos a{
@@ -56,6 +57,48 @@
     text-decoration: underline;
 }
 
+@media (max-width: 900px){
+    .inicio-productos-servicios h2{
+        font-size: 50px;
+    }
+
+    .inicio-productos-servicios:hover{
+        height: 400px;
+    }
+
+    .inicio-productos-servicios:hover .imagen-derecha{
+        translate: 200px;
+        z-index: -2;
+        filter: blur(20px);
+    }
+
+    .inicio-productos-servicios:hover .imagen-izquierda{
+        translate: -200px;
+        z-index: -1;
+        filter: blur(20px);
+    }
+}
+
+@media (max-width:767px){
+    .letras-inicio-productos{
+        width: 300px;
+    }
+    .inicio-productos-servicios h2{
+        font-size: 35px;
+    }
+
+    .inicio-productos-servicios:hover .imagen-derecha{
+        translate: 0;
+    }
+    .inicio-productos-servicios:hover .imagen-izquierda{
+        translate: 0;
+        z-index: -1;
+        filter: blur(50px);
+    }
+
+}
+
+
 .productos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -63,18 +106,16 @@
 
 .producto{
     margin: 20px;
-    display: grid;
     border-radius: 40px;
     opacity: .8;
     transition: .5s;
     background-color: rgba(128, 0, 167, 0.466);
 }
 
+
+
 .imagen-producto{
-    display: flex;
     overflow: hidden;
-    flex:1;
-    
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
@@ -91,6 +132,36 @@
     text-align: center;
     font-size: 28px;
     color: white;
+}
+
+@media (max-width: 900px){
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .producto{
+        height: 400px;
+        width: 300px;
+    }
+    .imagen-producto{
+        height: 300px;
+    }
+}
+
+@media (max-width: 767px){
+    .producto{
+        height: 200px;
+    }
+    .imagen-producto{
+        height: 150px;
+        width: 100%;
+    }
+
+    .producto h4{
+        font-size: 25px;
+        margin-top: 10px;
+    }
 }
 
 .producto:hover{
@@ -199,6 +270,8 @@
     border-bottom-left-radius: 550px;
 }
 
+
+
 .servicio h4{
     text-align: center;
     margin-block: 15px;
@@ -228,6 +301,47 @@
     opacity: 1;
     transition: 3s;
 }
+
+@media (max-width: 900px){
+    .servicios{
+        justify-content: center;
+    }
+    
+    .servicio{
+        height: 300px;
+        width: 700px;
+        
+    }
+
+    .servicio:hover{
+        transform: none;
+    }
+
+    .letra-servicio-par p,
+    .letra-servicio-impar p{
+        opacity: 1;
+        font-size: 23px;
+    }
+
+    .servicio:hover .letra-servicio-par{
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    .servicio:hover .letra-servicio-impar{
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px; 
+    }
+}
+
+@media (max-width: 767px){
+    .servicio{
+        flex-direction: column;
+        width: auto;
+    }
+    
+}
+
 
 .servicio1{
     background-image: url(../img/servicio-analisis\ de\ datos.webp);
@@ -270,7 +384,7 @@
 }
 
 
-.formulario h4{
+.formulario h3{
     text-align: center;
     color: white;
     font-size: 60px;
@@ -278,12 +392,14 @@
     text-decoration: underline;
 }
 
-.formulario h3{
+.formulario h4{
     color: white;
     padding: 15px;
     font-size: 30px;
     text-align: center;
 }
+
+
 
 .div-catalogo{
     position: relative;
@@ -346,7 +462,18 @@
     outline: none;
     border-radius: 20px;
     padding: 10px;
+    width: 740px;
 }
+
+@media (max-width: 900px){
+    .formulario{
+        width: 700px;
+    }
+    .areadetexto{
+        width: 650px;
+    }
+}
+
 
 .formulario a{
     color:white;
@@ -365,6 +492,35 @@
     color: white;
     padding: 10px;
 }
+
+@media (max-width: 767px){
+    
+    .formulario{
+        width: 300px;
+        transition: 2s;
+    }
+
+    .formulario h3{
+        font-size: 3rem;
+    }
+
+    .formulario h4{
+        font-size: 1.5rem;
+    }
+
+    .parte-abajo-catalogo{
+        flex-wrap: wrap;
+    }
+
+    .areadetexto{
+        width: 250px;
+    }
+
+    .boton-catalogo{
+        font-size: 20px;
+    }
+}
+
 
 .boton-catalogo:hover{
     background-color: rgba(197, 252, 87, 0.911);

@@ -109,13 +109,7 @@ color: rgba(128, 0, 167, 0.733);
     }
 }
 
-@media (max-width: 767px){
-    .sobre-nosotros{
-        flex-wrap: wrap;
-        flex-direction: column;
-        height: auto;
-    }
-}
+
 
 
 .imagen-sobre-nosotros{
@@ -125,6 +119,7 @@ color: rgba(128, 0, 167, 0.733);
     object-fit: cover;
     flex-basis:50%;
 }
+
 
 .imagen-comprometidos{
     background-image: url(../img/sobre_nosotros.webp);
@@ -153,6 +148,16 @@ color: rgba(128, 0, 167, 0.733);
 .imagen-afianzando-vinculos{
     background-image: url(../img/afianzando-vinculos.webp);
 }
+
+@media (max-width: 767px){
+    .sobre-nosotros{
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+    }
+
+}
+
 
 aside{
     border: solid rgba(128, 0, 167, 0.466);
@@ -211,6 +216,8 @@ aside{
     height: 600px;
 }
 
+
+
 .foto-contacto{
     background-image: url(../img/soporte-contacto.webp);
     height: 500px;
@@ -233,3 +240,24 @@ aside{
     text-decoration: underline;
 }
 
+@media (max-width: 800px){
+    .final-nosotros{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .foto-contacto{
+        height: 300px;
+        width: 450px;
+    }
+
+    .final-nosotros h3{
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px){
+    .final-nosotros h3{
+        font-size: 2.5rem;
+    }
+}

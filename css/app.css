@@ -460,12 +460,21 @@ p span{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (max-width: 900px){
+    .footer-arriba{
+        padding-inline: 20px;
+    }
+}
+
 @media (max-width: 767px){
     .footer-arriba{
         display: flex;
         flex-wrap: wrap;
         text-align: center;
         justify-content: center;
+    }
+    .nav-footer{
+        padding-bottom: 15px;
     }
 }
 
