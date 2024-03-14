@@ -5,8 +5,8 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    height: 400px;
-    padding-top: 30px;
+    height: 25rem;
+    padding-top: 1.875rem;
     transition: 3s;
 }
 
@@ -16,30 +16,30 @@
 
 .inicio-productos-servicios img{
     object-fit: cover;
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     position: absolute;
     transition: 3s;
 }
 
 .letras-inicio-productos{
     position: absolute;
-    width: 500px;
+    width: 31.25rem;
     opacity: 0;
     transition: 2s;
 }
 
 .inicio-productos-servicios:hover{
-    height: 600px;
+    height: 37.5rem;
 }
 
 .inicio-productos-servicios:hover .imagen-derecha{
-    translate: 500px;
+    translate: 31.25rem;
     transition: 3s;
 }
 
 .inicio-productos-servicios:hover .imagen-izquierda{
-    translate: -500px;
+    translate: -31.25rem;
     transition: 3s;
 }
 
@@ -59,21 +59,21 @@
 
 @media (max-width: 900px){
     .inicio-productos-servicios h2{
-        font-size: 50px;
+        font-size: 3.125rem;
     }
 
     .inicio-productos-servicios:hover{
-        height: 400px;
+        height: 25rem;
     }
 
     .inicio-productos-servicios:hover .imagen-derecha{
-        translate: 200px;
+        translate: 12.5rem;
         z-index: -2;
         filter: blur(20px);
     }
 
     .inicio-productos-servicios:hover .imagen-izquierda{
-        translate: -200px;
+        translate: -12.5rem;
         z-index: -1;
         filter: blur(20px);
     }
@@ -81,7 +81,7 @@
 
 @media (max-width:767px){
     .letras-inicio-productos{
-        width: 300px;
+        width: 18.75rem;
     }
     .inicio-productos-servicios h2{
         font-size: 35px;
@@ -105,8 +105,8 @@
 }
 
 .producto{
-    margin: 20px;
-    border-radius: 40px;
+    margin: 1.25rem;
+    border-radius: 2.5rem;
     opacity: .8;
     transition: .5s;
     background-color: rgba(128, 0, 167, 0.466);
@@ -116,12 +116,12 @@
 
 .imagen-producto{
     overflow: hidden;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
 }
 
 .imagen-producto img{
-    height: 400px;
+    height: 25rem;
     object-fit: cover;
     width: 100%;
     transition: 1s;
@@ -130,7 +130,7 @@
 
 .producto h4{
     text-align: center;
-    font-size: 28px;
+    font-size: 1.75rem;
     color: white;
 }
 
@@ -141,20 +141,20 @@
         justify-content: center;
     }
     .producto{
-        height: 400px;
-        width: 300px;
+        height: 25rem;
+        width: 18.75rem;
     }
     .imagen-producto{
-        height: 300px;
+        height: 18.75rem;
     }
 }
 
 @media (max-width: 767px){
     .producto{
-        height: 200px;
+        height: 12.5rem;
     }
     .imagen-producto{
-        height: 150px;
+        height: 9.375rem;
         width: 100%;
     }
 
@@ -182,14 +182,14 @@
 
 .servicios{
     display:grid;
-    row-gap: 30px;
+    row-gap: 1.875rem;
 }
 
 .servicio{
     display: flex;
     flex-wrap: wrap;
     opacity: 0.85;
-    height: 100px;
+    height: 6.25rem;
     transition: 2s;
 }
 
@@ -198,23 +198,23 @@
     opacity: 1;
     filter: contrast(120%);
     transform: scale(1.1);
-    height: 300px;
+    height: 18.75rem;
 }
 
 
 .imagen-servicio-impar{
     height: 100%;
     flex-basis: 50%;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;  
+    border-top-left-radius: 3.125rem;
+    border-bottom-left-radius: 3.125rem;  
     transition: 2s;
 }
 
 .imagen-servicio-par{
     height: 100%;
     flex-basis: 50%;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;  
+    border-top-right-radius: 3.125rem;
+    border-bottom-right-radius: 3.125rem;  
     transition: 2s;
 }
 
@@ -223,10 +223,10 @@
     color: white;
     height: 100%;
     flex-basis: 50%;
-    font-size: 30px;
+    font-size: 1.875rem;
     margin: auto;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-right-radius: 3.125rem;
+    border-bottom-right-radius: 3.125rem;
     transition: 2s;
 }
 
@@ -236,10 +236,10 @@
     color: white;
     height: 100%;
     flex-basis: 50%;
-    font-size: 30px;
+    font-size: 1.875rem;
     margin: auto;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-top-left-radius: 3.125rem;
+    border-bottom-left-radius: 3.125rem;
     transition: 2s;
 }
 
@@ -247,27 +247,27 @@
 .servicio:hover .servicio3,
 .servicio:hover .servicio5{
     transition: 1s;
-    border-top-left-radius: 550px;
-    border-bottom-left-radius: 150px;
+    border-top-left-radius: 34.375rem;
+    border-bottom-left-radius: 9.375rem;
 }
 
 .servicio:hover .servicio2,
 .servicio:hover .servicio4{
     transition: 1s;
-    border-top-right-radius: 550px;
-    border-bottom-right-radius: 150px;
+    border-top-right-radius: 34.375rem;
+    border-bottom-right-radius: 9.375rem;
 }
 
 .servicio:hover .letra-servicio-impar{
     transition: 1s;
-    border-top-right-radius: 150px;
-    border-bottom-right-radius: 550px;
+    border-top-right-radius: 9.375rem;
+    border-bottom-right-radius: 34.375rem;
 }
 
 .servicio:hover .letra-servicio-par{
     transition: 1s;
-    border-top-left-radius: 150px;
-    border-bottom-left-radius: 550px;
+    border-top-left-radius: 9.375rem;
+    border-bottom-left-radius: 34.375rem;
 }
 
 
@@ -279,11 +279,11 @@
 
 .servicio p{
     padding-block: 15px;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .letra-servicio-impar p{
-    padding-inline: 30px;
+    padding-inline: 1.875rem;
     opacity: 0;
 }
 .servicio:hover .letra-servicio-impar p{
@@ -292,7 +292,7 @@
 }
 
 .letra-servicio-par p{
-    padding-left: 80px;
+    padding-left: 5rem;
     padding-right: 10px;
     opacity: 0;
 }
@@ -308,8 +308,8 @@
     }
     
     .servicio{
-        height: 300px;
-        width: 700px;
+        height: 18.75rem;
+        width: 43.75rem;
         
     }
 
@@ -324,13 +324,13 @@
     }
 
     .servicio:hover .letra-servicio-par{
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
+        border-top-left-radius: 3.125rem;
+        border-bottom-left-radius: 3.125rem;
     }
 
     .servicio:hover .letra-servicio-impar{
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px; 
+        border-top-right-radius: 3.125rem;
+        border-bottom-right-radius: 3.125rem; 
     }
 }
 
@@ -372,18 +372,18 @@
 }
 
 .formulario{
-    width: 800px;
-    padding: 30px;
+    width: 50rem;
+    padding: 1.875rem;
     margin: auto;
     background-color: rgba(128, 0, 167, 0.356);
-    border-radius: 30px;
+    border-radius: 1.875rem;
 }
 
 
 .formulario h3{
     text-align: center;
     color: white;
-    font-size: 60px;
+    font-size: 3.75rem;
     margin: 0 0 25px;
     text-decoration: underline;
 }
@@ -391,7 +391,7 @@
 .formulario h4{
     color: white;
     padding: 15px;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
 }
 
@@ -405,9 +405,9 @@
     background-color: rgba(128, 0, 167, 0.356);
     padding: 10px;
     margin-bottom: 35px;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     border: solid 3px white;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;
     outline: none;
     background: none;
@@ -423,8 +423,8 @@
 }
 
 .formulario p{
-    height: 60px;
-    font-size: 20px;
+    height: 3.75rem;
+    font-size: 1.25rem;
     color: white;
 }
 
@@ -452,19 +452,19 @@
 }
 
 .areadetexto{
-    font-size: 20px;
+    font-size: 1.25rem;
     outline: none;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     padding: 10px;
-    width: 740px;
+    width: 46.25rem;
 }
 
 @media (max-width: 900px){
     .formulario{
-        width: 700px;
+        width: 43.75rem;
     }
     .areadetexto{
-        width: 650px;
+        width: 40.625rem;
     }
 }
 
@@ -479,7 +479,7 @@
 
 .boton-catalogo{
     width: 100%;
-    font-size: 40px;
+    font-size: 2.5rem;
     border: none;
     border-radius: 25px;
     background-color: rgb(177, 224, 81);
@@ -490,7 +490,7 @@
 @media (max-width: 767px){
     
     .formulario{
-        width: 300px;
+        width: 18.75rem;
         transition: 2s;
     }
 
@@ -507,11 +507,11 @@
     }
 
     .areadetexto{
-        width: 250px;
+        width: 15.625rem;
     }
 
     .boton-catalogo{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
@@ -528,7 +528,7 @@
 }
 
 .formulario-catalogo img{
-    margin: 30px auto;
-    height: 300px;
+    margin: 1.875rem auto;
+    height: 18.75rem;
 }
 

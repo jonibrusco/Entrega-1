@@ -181,8 +181,8 @@ ul{
     font-size: 2.5rem;
     box-shadow: 0 0 20px  rgba(238, 238, 13, 0.699);
     padding-block: 10px;
-    padding-inline: 20px;
-    border-radius: 60px;
+    padding-inline: 1.25rem;
+    border-radius: 3.75rem;
     background-color: rgba(238, 238, 13, 0.699);
     color: white;
 }
@@ -204,8 +204,8 @@ ul{
 
 
 .seccion-historia{
-    padding-bottom: 40px;
-    margin-top: 20px;
+    padding-bottom: 2.5rem;
+    margin-top: 1.25rem;
 }
 
 .historia{
@@ -215,14 +215,14 @@ ul{
 }
 
 .articulo-historia{
-    padding-top: 20px;
-    margin: 20px;
+    padding-top: 1.25rem;
+    margin: 1.25rem;
 }
 
 .carta{
     background-color: transparent;
-    width: 500px;
-    height: 500px;
+    width: 31.25rem;
+    height: 31.25rem;
     position: relative;
     transform: 0.6s;
     transform-style: preserve-3d;
@@ -245,7 +245,7 @@ ul{
     align-items: center;
     justify-content: center;
     backface-visibility: hidden;
-    border-radius: 100px;
+    border-radius: 6.25rem;
     background-position: center;
     background-size: cover;
 }
@@ -270,15 +270,15 @@ ul{
     font-size: 3.5rem;
     backdrop-filter: blur(10px);
     color: white;
-    width: 500px;
-    height: 140px;
+    width: 31.25rem;
+    height: 8.75rem;
     text-shadow: 0 0 10px white;
 }
 @media (max-width: 767px){
     
     .carta{
-        width: 300px;
-        height: 750px;
+        width: 18.75rem;
+        height: 46.875rem;
     }
 
     .articulo-historia:hover .carta{
@@ -291,7 +291,7 @@ ul{
 
     .titulo-hist h3{
         font-size: 2.7rem;
-        width: 300px;
+        width: 18.75rem;
     }
 }
 
@@ -304,9 +304,9 @@ ul{
     color: white;
     display: flex;
     flex-direction: column;
-    padding-inline: 50px;
+    padding-inline: 3.125rem;
     text-align: center;
-    border-radius: 100px;
+    border-radius: 6.25rem;
 }
 
 .explicacion-hist h3{
@@ -319,22 +319,22 @@ ul{
 
 .innovacion{
     display: flex;
-    height: 700px;
+    height: 43.75rem;
     flex-wrap: wrap;
     position: relative;
-    width: 1000px;
+    width: 62.5rem;
     justify-content: center;
-    padding: 40px;
-    margin-bottom: 30px;
-    border-radius: 40px;
+    padding: 2.5rem;
+    margin-bottom: 1.875rem;
+    border-radius: 2.5rem;
 }
 
 
 .imagen-innovacion{
     position: absolute;
     object-fit: cover;
-    height: 500px;
-    width: 700px;
+    height: 31.25rem;
+    width: 43.75rem;
     transition: 2s;
     animation: pulse 3s infinite;
 }
@@ -345,9 +345,9 @@ ul{
 }
 
 .innovacion:hover .imagen-innovacion{
-    translate: 250px;
+    translate: 15.625rem;
     transition: 2s;
-    width: 500px;
+    width: 31.25rem;
     height: 100%;
     animation: none;
 }
@@ -358,15 +358,15 @@ ul{
 }
 
 .texto-innovacion p{
-    font-size: 30px;
-    margin-right: 500px;
+    font-size: 1.875rem;
+    margin-right: 31.25rem;
     margin-top: 0;
     color: white;
 }
 
 
 .texto-innovacion h3{
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -376,18 +376,18 @@ ul{
 
 @media (max-width: 900px){
     .innovacion{
-        width: 650px;
+        width: 40.625rem;
         background-color: rgba(128, 0, 167, 0.329);
-        height: 900px;
+        height: 56.25rem;
     }
     .imagen-innovacion{
         animation: none;
-        width: 500px;
+        width: 31.25rem;
     }
 
     .texto-innovacion p{
-        margin-inline: 40px;
-        margin-top: 300px;
+        margin-inline: 2.5rem;
+        margin-top: 18.75rem;
     }
 
     .innovacion:hover .imagen-innovacion{
@@ -404,24 +404,24 @@ ul{
 
 @media (max-width: 767px){
     .innovacion{
-        width: 300px;
+        width: 18.75rem;
     }
     .imagen-innovacion{
-        width: 300px;
+        width: 18.75rem;
     }
     .innovacion:hover .imagen-innovacion{
-        width: 300px;
+        width: 18.75rem;
     }
 
     .texto-innovacion p{
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-inline: 10px;
-        margin-top: 200px;
+        margin-top: 12.5rem;
     }
 
     .texto-innovacion h3{
         font-size: 27px;
-        margin-top: 30px;
+        margin-top: 1.875rem;
     }
 }
 
@@ -439,7 +439,7 @@ ul{
 
 .fabrica-futuro{
     background-image: url(../img/fondo-lafabrica-delfuturo.avif);
-    height: 850px;
+    height: 53.125rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -447,7 +447,7 @@ ul{
     place-items: center;
     transition: 5s;
     grid-template-rows: repeat(4, 1fr);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .fabrica-futuro:hover{
@@ -456,44 +456,44 @@ ul{
 
 .fabrica-futuro h2{
     color: white;
-    text-shadow: 0 0 40px;
+    text-shadow: 0 0 2.5rem;
     border-block: none; 
 }
 
 .fabrica-futuro p{
-    font-size: 40px;
+    font-size: 2.5rem;
     color: white;
-    padding-inline: 100px;
-    padding-block: 30px;
+    padding-inline: 6.25rem;
+    padding-block: 1.875rem;
     width: 80%;
     margin: auto;
 }
 
 .fabrica-futuro span{
     color: red;
-    text-shadow: 0 0 20px;
+    text-shadow: 0 0 1.25rem;
 }
 
 .fabrica-futuro a{
     backdrop-filter: blur(100px);
-    padding: 10px 30px;
+    padding: 0.625rem 1.875rem;
     color: white;
-    font-size: 50px;
-    border-radius: 50px;
+    font-size: 3.125rem;
+    border-radius: 3.125rem;
     transition: 2s;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     background-color: rgba(238, 238, 13, 0.699);
-    box-shadow: 0 0 30px;
+    box-shadow: 0 0 1.875rem;
 }
 
 @media (max-width: 900px){
     .fabrica-futuro p{
-        font-size: 30px;
+        font-size: 1.875rem;
         padding-inline: 15px;
     }
 
     .fabrica-futuro a{
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 }
 
@@ -516,7 +516,7 @@ ul{
 }
 
 .footer p{
-    padding-top: 40px;
+    padding-top: 2.5rem;
     text-align: center;
 }
 
@@ -527,7 +527,7 @@ ul{
 
 @media (max-width: 900px){
     .footer-arriba{
-        padding-inline: 20px;
+        padding-inline: 1.25rem;
     }
 }
 
@@ -544,14 +544,14 @@ ul{
 }
 
 .footer h4{
-    font-size: 40px;
+    font-size:2.5rem;
     color: gray;
     margin-top: 0;
     margin-bottom: 15px;
 }
 
 .nav-footer a{
-    font-size: 20px;
+    font-size: 1.25rem;
     display: grid;
     margin-bottom: 10px;
     color: gray;
